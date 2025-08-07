@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wishlist & Montaj Calculatoare</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Wishlist & Montaj Calculatoare</h1>
+    <nav>
+      <a href="#acasa">Acasă</a>
+      <a href="#servicii">Servicii</a>
+      <a href="#recenzii">Recenzii</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="acasa" class="section-home">
+    <div class="intro-text">
+      <h2>Bun venit!</h2>
+      <p>Oferim servicii profesionale de configurare wishlist pentru calculatoare personalizate și montaj complet, cu garanție și suport.</p>
+      <p>Fie că vrei o configurație pe bugetul tău sau un PC asamblat profesional, suntem aici să te ajutăm.</p>
+    </div>
+  </section>
+
+  <section id="servicii" class="section-services">
+    <h2>Serviciile Noastre</h2>
+    <div class="servicii-container">
+      <div class="serviciu-card">
+        <h3>🛒 Wishlist Personalizat</h3>
+        <p>Îți creăm o configurație ideală pentru calculator, pe baza cerințelor și bugetului tău.</p>
+      </div>
+      <div class="serviciu-card">
+        <h3>🔧 Montaj Complet</h3>
+        <p>Asamblăm și testăm PC-ul tău, gata pentru utilizare, cu garanție și suport.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recenzii" class="section-reviews">
+    <h2>Recenzii Clienți</h2>
+    <div class="recenzii-container">
+      <div class="recenzie-card">
+        <img src="client1.jpg" alt="Ion Popescu" />
+        <h3>Ion Popescu</h3>
+        <p>"Serviciul de montaj a fost rapid și profesionist. Recomand cu încredere!"</p>
+      </div>
+      <div class="recenzie-card">
+        <img src="client2.jpg" alt="Maria Ionescu" />
+        <h3>Maria Ionescu</h3>
+        <p>"Wishlist-ul configurat exact pe gustul meu și buget. Mulțumesc mult!"</p>
+      </div>
+      <div class="recenzie-card">
+        <img src="client3.jpg" alt="Alexandru Matei" />
+        <h3>Alexandru Matei</h3>
+        <p>"Montajul a fost impecabil, iar comunicarea excelentă."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section-contact">
+    <h2>Cere o ofertă</h2>
+    <form action="https://formspree.io/f/xnnzodza" method="POST">
+      <label for="nume">Nume:</label>
+      <input type="text" id="nume" name="nume" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="tip">Tip serviciu:</label>
+      <select id="tip" name="tip">
+        <option value="wishlist">Wishlist PC</option>
+        <option value="montaj">Montaj PC</option>
+        <option value="ambele">Ambele</option>
+      </select>
+
+      <label for="mesaj">Detalii suplimentare:</label>
+      <textarea id="mesaj" name="mesaj" rows="5"></textarea>
+
+      <button type="submit">Trimite cererea</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Wishlist & Montaj PC - Toate drepturile rezervate</p>
+  </footer>
+</body>
+</html>
