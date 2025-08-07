@@ -2,89 +2,74 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wishlist & Montaj Calculatoare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configurare și Montaj Calculatoare</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <header>
-    <h1>Wishlist & Montaj Calculatoare</h1>
-    <nav>
-      <a href="#acasa">Acasă</a>
-      <a href="#servicii">Servicii</a>
-      <a href="#recenzii">Recenzii</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Configurare & Montaj PC + Wishlist-uri Personalizate</h1>
   </header>
 
-  <section id="acasa" class="section-home">
-    <div class="intro-text">
-      <h2>Bun venit!</h2>
-      <p>Oferim servicii profesionale de configurare wishlist pentru calculatoare personalizate și montaj complet, cu garanție și suport.</p>
-      <p>Fie că vrei o configurație pe bugetul tău sau un PC asamblat profesional, suntem aici să te ajutăm.</p>
-    </div>
+  <section id="acasa">
+    <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_sFZISJ.json" background="transparent" speed="1" style="max-width: 300px; margin: auto;" loop autoplay></lottie-player>
+    <p>Oferim servicii complete de configurare și asamblare PC, dar și consultanță pentru alegerea componentelor perfecte.</p>
   </section>
 
-  <section id="servicii" class="section-services">
+  <section id="servicii">
     <h2>Serviciile Noastre</h2>
-    <div class="servicii-container">
-      <div class="serviciu-card">
-        <h3>🛒 Wishlist Personalizat</h3>
-        <p>Îți creăm o configurație ideală pentru calculator, pe baza cerințelor și bugetului tău.</p>
-      </div>
-      <div class="serviciu-card">
-        <h3>🔧 Montaj Complet</h3>
-        <p>Asamblăm și testăm PC-ul tău, gata pentru utilizare, cu garanție și suport.</p>
-      </div>
+    <ul>
+      <li>✅ Configurare componente în funcție de buget și scop</li>
+      <li>🔧 Montaj profesional</li>
+      <li>📦 Testare și livrare</li>
+      <li>🧠 Consultanță tehnică gratuită</li>
+    </ul>
+    <div style="text-align:center; margin-top: 30px;">
+      <a href="#form" class="btn-interactiv">Solicită Montaj PC</a>
+      <a href="https://wa.me/40712345678" class="btn-interactiv" target="_blank">Contact WhatsApp</a>
     </div>
   </section>
 
-  <section id="recenzii" class="section-reviews">
+  <section id="recenzii">
     <h2>Recenzii Clienți</h2>
     <div class="recenzii-container">
-      <div class="recenzie-card">
-        <img src="client1.jpg" alt="Ion Popescu" />
+      <div class="recenzie-card" data-aos="fade-up">
+        <img src="client1.jpg" alt="Client 1" />
         <h3>Ion Popescu</h3>
         <p>"Serviciul de montaj a fost rapid și profesionist. Recomand cu încredere!"</p>
       </div>
-      <div class="recenzie-card">
-        <img src="client2.jpg" alt="Maria Ionescu" />
+      <div class="recenzie-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="client2.jpg" alt="Client 2" />
         <h3>Maria Ionescu</h3>
         <p>"Wishlist-ul configurat exact pe gustul meu și buget. Mulțumesc mult!"</p>
       </div>
-      <div class="recenzie-card">
-        <img src="client3.jpg" alt="Alexandru Matei" />
+      <div class="recenzie-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="client3.jpg" alt="Client 3" />
         <h3>Alexandru Matei</h3>
         <p>"Montajul a fost impecabil, iar comunicarea excelentă."</p>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section-contact">
-    <h2>Cere o ofertă</h2>
+  <section id="form">
+    <h2>Trimite o Cerere</h2>
     <form action="https://formspree.io/f/xnnzodza" method="POST">
-      <label for="nume">Nume:</label>
-      <input type="text" id="nume" name="nume" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="tip">Tip serviciu:</label>
-      <select id="tip" name="tip">
-        <option value="wishlist">Wishlist PC</option>
-        <option value="montaj">Montaj PC</option>
-        <option value="ambele">Ambele</option>
-      </select>
-
-      <label for="mesaj">Detalii suplimentare:</label>
-      <textarea id="mesaj" name="mesaj" rows="5"></textarea>
-
-      <button type="submit">Trimite cererea</button>
+      <input type="text" name="nume" placeholder="Numele tău" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="mesaj" placeholder="Scrie mesajul tău..." required></textarea>
+      <button type="submit" class="btn-interactiv">Trimite</button>
     </form>
   </section>
 
   <footer>
-    <p>&copy; 2025 Wishlist & Montaj PC - Toate drepturile rezervate</p>
+    <p>&copy; 2025 Configurare PC & Wishlist - Toate drepturile rezervate.</p>
   </footer>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
